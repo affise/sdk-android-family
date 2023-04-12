@@ -12,8 +12,6 @@
     - [Predefined event parameters](#predefined-event-parameters)
     - [Events buffering](#events-buffering)
     - [Install referrer tracking](#install-referrer-tracking)
-    - [Advertising Identifier (google) tracking](#advertising-identifier-google-tracking)
-    - [Open Advertising Identifier (huawei) tracking](#open-advertising-identifier-huawei-tracking)
     - [Push token tracking](#push-token-tracking)
     - [Reinstall Uninstall tracking](#reinstall-uninstall-tracking)
     - [APK preinstall tracking](#apk-preinstall-tracking)
@@ -165,32 +163,22 @@ To match users with events and data library is sending, these identifiers are co
 - `UNINSTALL_TIME`
 - `REINSTALL_TIME`
 - `LAST_SESSION_TIME`
-- `CONNECTION_TYPE`
 - `CPU_TYPE`
 - `HARDWARE_NAME`
 - `NETWORK_TYPE`
 - `DEVICE_MANUFACTURER`
-- `PROXY_IP_ADDRESS`
 - `DEEPLINK_CLICK`
 - `DEVICE_ATLAS_ID`
 - `AFFISE_DEVICE_ID`
 - `AFFISE_ALT_DEVICE_ID`
-- `ADID`
 - `ANDROID_ID`
 - `ANDROID_ID_MD5`
-- `MAC_SHA1`
-- `MAC_MD5`
-- `GAID_ADID`
-- `GAID_ADID_MD5`
-- `OAID`
-- `OAID_MD5`
 - `REFTOKEN`
 - `REFTOKENS`
 - `REFERRER`
 - `USER_AGENT`
 - `MCCODE`
 - `MNCODE`
-- `ISP`
 - `REGION`
 - `COUNTRY`
 - `LANGUAGE`
@@ -418,15 +406,6 @@ In examples above `PredefinedParameters.DESCRIPTION` is used, but many others is
 
 Affise library will send any pending events with first opportunity,
 but if there is no network connection or device is disabled, events are kept locally for 7 days before deletion.
-
-
-### Advertising Identifier (google) tracking
-
-Advertising Identifier (google) tracking is supported automatically, no actions needed
-
-### Open Advertising Identifier (huawei) tracking
-
-Open Advertising Identifier is supported automatically, no actions needed
 
 ### Install referrer tracking
 
